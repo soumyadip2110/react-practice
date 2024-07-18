@@ -1,10 +1,12 @@
 import React from 'react'
 
-function Card({username, btnText = 'View Profile'}) {
+function Card({ username, btnText = 'View Profile' }) {
+    const imgSrc = "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+
     return (
-        <div className="relative h-[400px] w-[300px] rounded-md m-2 shadow-md shadow-violet-400">
+        <div className="relative h-[400px] w-[300px] rounded-md m-4 shadow-[8px_8px_20px_rgb(109,40,217)]">
             <img
-                src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                src={imgSrc}
                 alt="AirMax Pro"
                 className="z-0 h-full w-full rounded-md object-cover"
             />
