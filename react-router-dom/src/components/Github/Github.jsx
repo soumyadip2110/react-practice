@@ -13,9 +13,9 @@ function Github() {
 	const data = useLoaderData()
 	
 	return (
-	<div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>
+	<div className='flex flex-col items-center text-center m-4 bg-gray-600 text-white p-4 text-3xl'>
 		Github followers: {data ? data.followers : 'NA'}
-		<img src={data ? data.avatar_url : '#'} alt='Github avatar image' width={300} />
+		<img src={data ? data.avatar_url : '#'} alt='Github avatar image' width={300} className='m-4'/>
 	</div>
 	)
 }
