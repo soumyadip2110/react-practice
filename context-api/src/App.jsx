@@ -7,7 +7,7 @@ function App() {
 
   return (
     <UserContextProvider>
-      <h1>React and Context Api</h1>
+      <h1>React and Context Api😁(emoji = Win + .)</h1>
       <Login />
       <Profile />
     </UserContextProvider>
