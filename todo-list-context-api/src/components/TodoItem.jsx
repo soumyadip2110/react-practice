@@ -7,7 +7,9 @@ function TodoItem({ todo }) {
     const {updateTodo, toggleComplete, deleteTodo} = useTodo()
 
     const editTodo = () => {
-        updateTodo(todo.id, {...todo, todo: todoMsg})
+        if (!todoMsg || todoMsg.trim().length === 0) return
+
+        updateTodo(todo.id, {...todo, todo: todoMsg.trim()})
         setIsTodoEditable(false)
     }
 
